@@ -9,7 +9,7 @@ html{
 }
 body{
     background: white;
-    color: whitesmoke;
+    color: pink;
 }
 #header{
      width: 100%;
@@ -64,7 +64,7 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 .header-text h1 span{ 
-    color: whitesmoke;
+    color:chocolate;
 }
 }
 /*-------------------about---------------------*/
