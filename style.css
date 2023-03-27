@@ -8,7 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: black;
+    background: white;
     color: red violet;
 }
 #header{
@@ -37,8 +37,8 @@ nav ul li{
     margin: 10px 20px;
 }
 nav ul li a{
-    color: yellow;
-    text-decoration: none;
+    color: white;
+    text-decoration: underline;
     font-size: 25px;
     position: relative;
 }
@@ -46,7 +46,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: red ;
+    background: red violet;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -64,7 +64,8 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 .header-text h1 span{ 
-    color: red ;
+    color: red violet;
+}
 }
 /* About Section */
 #about {
