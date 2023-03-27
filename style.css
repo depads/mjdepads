@@ -64,7 +64,7 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 .header-text h1 span{ 
-    color:gray;
+    color:violet;
 }
 }
 /*-------------------about---------------------*/
@@ -122,10 +122,10 @@ ul li:before {
 }
 
 /*-------------------------contact-------------------------*/
-.contact-left{
+.contact-right{
     flex-basis: 35%;
 }
-.contact-left{
+.contact-right{
     flex-basis: 60%;
 }
 .contact-left p{
