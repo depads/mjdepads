@@ -64,40 +64,29 @@
     </div>
   </div>
 </section>
-    </section>
-    <section id="contact">
+  <!-------contact--------->
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <section id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h2 class="sub-title">Contact Me</h2>
-        <p><i class="fas fa-paper-plane"></i> Email: medjiedepadua5@gmail.com</p>
-        <p><i class="fas fa-phone"></i> Phone: +639635828389</p>
-        <p><i class="fas fa-map-marker-alt"></i> Address: Tochip Compound Singson rd,Guadalupe Cebu City</p>
-      </div>
-      <div class="contact-left">
-        <form>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> Contact: medjiedepadua5@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>0963 582 8389</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: Tochip Compound Singson rd,Guadalupe Cebu City</p>
+                    
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet"> 
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+       
                     <footer>
   <div class="container">
     <div class="row">
@@ -113,3 +102,55 @@
     </div>
   </div>
 </footer>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script> 
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbye0omZR-zJ2Os43CmhDoX-Df0zAC4r9bT48GvqWepQTN5CcRVAMjL_dIcKb5XyXDcr/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>
+               
