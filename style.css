@@ -12,8 +12,8 @@ html{
     background-color: black;
 }
 body{
-    background: white;
-    color: red violet;
+    background: orange;
+    color: red;
 }
 #header{
      width: 100%;
@@ -68,7 +68,7 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 .header-text h1 span{ 
-    color: red violet;
+    color: white;
 }
 /*-------------------about---------------------*/
 #about {
