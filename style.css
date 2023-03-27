@@ -64,7 +64,7 @@ nav ul li a:hover::after{
     margin-top: 10px;
 }
 .header-text h1 span{ 
-    color: teal;
+    color: red;
 }
 }
 /*-------------------about---------------------*/
@@ -141,7 +141,7 @@ ul li:before {
 .contact-info i {
   font-size: 2rem;
   margin-right: 1rem;
-  color: blue;
+  color: red;
 }
 
 .contact-info p {
@@ -170,7 +170,7 @@ ul li:before {
   width: 100
     /* Contact section */
 #contact {
-  background-color: maroon;
+  background-color: white;
   padding: 80px 0;
 }
 
