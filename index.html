@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/fce8ac7fd7.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header>
-        <div class="container">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css" >
+        <script src="https://kit.fontawesome.com/fce8ac7fd7.js" crossorigin="anonymous"></script>   
+         
+    </head>
+
+    <body>
+        <div id="header">
+        <div class="container-left">
             <nav>
-                <div class="logo">
-                    <img src="images/logo-gsc.png" alt="Logo">
-                </div>
-                <ul class="menu">
+                <img src="images/logo-gsc.png" class="logo">
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-regular fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Hi, I'm Medjie</p>
-                <h1>I'm currently pursuing a Bachelor of Science in Information Technology (BSIT) at Golden Success College.</h1>
-            </div>
+            <p>Hi, I'm Medjie</p>
+            <h1> <span>I'm currently pursuing a<br>Bachelor of Science in <br>Information Technology(BSIT)<br>at Golden Success College.</h1></span>
+
         </div>
-    </header>
+        </div>
+    </div>
+
     <section id="about">
         <div class="container">
             <div class="row">
