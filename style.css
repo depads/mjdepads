@@ -122,10 +122,10 @@ ul li:before {
 }
 
 /*-------------------------contact-------------------------*/
-.contact-right{
+.contact-left{
     flex-basis: 35%;
 }
-.contact-right{
+.contact-left{
     flex-basis: 60%;
 }
 .contact-left p{
